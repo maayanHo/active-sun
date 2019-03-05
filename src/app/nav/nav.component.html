@@ -1,0 +1,62 @@
+<nav class="navbar justify-content-center header-wrapper ">
+
+  <div class="header-menu navbar-right container" style="text-align: right; font-size: 13px">
+    <a class="" routerLink="/logo">
+      <img src="/assets/logos-03.png" height="60" width="150">
+    </a>
+
+    <!-- desktop menu -->
+    <span class="menu">
+      <a class="menu-link"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact: true}"
+         routerLink="/work">portfolio</a>
+      <a class="menu-link" routerLinkActive="active" routerLink="/personal">personal</a>
+      <a class="menu-link" routerLinkActive="active" routerLink="/daily">daily</a>
+      <a class="menu-link" routerLinkActive="active" routerLink="/contact">contact</a>
+    </span>
+
+    <!-- mobile menu -->
+    <span class="menu-link-mobile">
+      <div class="menu-link" (click)="openNav()">
+        <img src="/assets/menu.png" height="30" width="30">
+      </div>
+
+      <div class="overlay" [ngClass]="isOpen ? 'open-mobile-menu' : 'close-mobile-menu'">
+        <a class="closebtn" (click)="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a (click)="closeNav()" routerLink="/work">portfolio</a>
+          <a (click)="closeNav()" routerLink="/personal">personal</a>
+          <a (click)="closeNav()" routerLink="/daily">daily</a>
+          <a (click)="closeNav()" routerLink="/contact">contact</a>
+        </div>
+      </div>
+
+    </span>
+
+    <span class="social-media-bar" style="">
+      <a target="_blank" href="https://www.instagram.com/avivtalart/" class="social-media-link">
+        <img src="/assets/socialMedia/instagram.png"
+             height="24"
+             width="24"
+             onmouseover="this.src='/assets/socialMedia/instagram-hover.png'"
+             onmouseout="this.src='/assets/socialMedia/instagram.png'">
+      </a>
+      <a target="_blank" href="https://www.facebook.com/avivtalart/" class="social-media-link">
+        <img src="/assets/socialMedia/facebook.png"
+             onmouseover="this.src='/assets/socialMedia/facebook-hover.png'"
+             onmouseout="this.src='/assets/socialMedia/facebook.png'"
+             height="24"
+             width="24">
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/aviv-tal-b56578150/" class="social-media-link">
+        <img src="/assets/socialMedia/linkedin.png"
+             onmouseover="this.src='/assets/socialMedia/linkedin-hover.png'"
+             onmouseout="this.src='/assets/socialMedia/linkedin.png'"
+             height="24"
+             width="24">
+      </a>
+    </span>
+  </div>
+
+</nav>

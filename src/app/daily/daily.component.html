@@ -1,0 +1,65 @@
+<!-- Photo Grid -->
+<div *ngIf="loadDaily" class="container" style="margin-bottom: 150px">
+  <div class="column">
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily2-big.PNG')">
+      <img src="/assets/daily/daily2.PNG" class="image" style="width:100%">
+    <div class="middle text" style="background-color: #D63742">darker things </div>
+    </div>
+
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily1-big.PNG')">
+      <img src="/assets/daily/daily1.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #FD9551">they called him Mr. Glass.</div>
+    </div>
+
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily11-big.PNG')">
+      <img src="/assets/daily/daily11.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #1E4580">bride </div>
+    </div>
+
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily7-big.PNG')">
+      <img src="/assets/daily/daily7.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #2A5398">the girl from ipanema</div>
+    </div>
+
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily12-big.PNG')">
+      <img src="/assets/daily/daily12.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #DB8F00">Life in plastic</div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily5-big.PNG')">
+      <img src="/assets/daily/daily5.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #9C82A5">grow</div>
+    </div>
+
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily4-big.PNG')">
+      <img src="/assets/daily/daily4.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #F1B6AE">rose gold</div>
+    </div>
+
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily8-big.PNG')">
+      <img src="/assets/daily/daily8.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #951432">the restaurant at the end of the universe</div>
+    </div>
+
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily10-big.PNG')">
+      <img src="/assets/daily/daily10.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #CD5DC9">strawberry fields</div>
+    </div>
+
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily9-big.PNG')">
+      <img src="/assets/daily/daily9.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #364F87">a half forgotten dream </div>
+    </div>
+
+    <div class="image_hover" (click)="loadDailyImage('/assets/daily/daily13-big.PNG')">
+      <img src="/assets/daily/daily13.PNG" class="image" style="width:100%">
+      <div class="middle text" style="background-color: #25294E">robot spine</div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf= '!loadDaily'>
+  <app-daily-display [imgSrc]="imgSrc" (hideDailyDisplay)="hideDailyDisplayEvent($event)"></app-daily-display>
+</div>
