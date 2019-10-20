@@ -14,7 +14,7 @@ import { HysolateComponent } from './hysolate/hysolate.component';
 import { DailyDisplayComponent } from './daily-display/daily-display.component';
 
 const routes: Routes = [
-  { path: '', component: WorkComponent, pathMatch: 'full' },
+  { path: '', pathMatch: 'full', redirectTo: '/work' },
   { path: 'nav', component: NavComponent },
   { path: 'work', component: WorkComponent },
   { path: 'personal', component: PersonalComponent },

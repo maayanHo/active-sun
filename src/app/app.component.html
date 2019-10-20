@@ -1,9 +1,17 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="container" style="text-align:center;">
   <app-nav></app-nav>
 </div>
 
+<div [hidden]="!loading" class="loader">Loading...</div>
+
+<div [hidden]="loading" class="router-output">
+  <router-outlet></router-outlet>
+</div>
+
+<!--
 <router-outlet></router-outlet>
+
+-->
 <!--
   <app-footer></app-footer>
 -->
