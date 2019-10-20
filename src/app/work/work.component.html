@@ -1,5 +1,5 @@
 <!-- Photo Grid -->
-<div class="container" style="margin-bottom: 150px">
+<div *ngIf="loadDaily" class="container" style="margin-bottom: 150px">
   <div class="column">
     <div class="image_hover">
       <a routerLink="/poc">
@@ -130,4 +130,9 @@
   </div>
 
 </div>
+
+<div *ngIf= '!loadDaily'>
+  <app-daily-display [imgSrc]="imgSrc" (hideDailyDisplay)="hideDailyDisplayEvent($event)"></app-daily-display>
+</div>
+
 

@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkComponent implements OnInit {
 
+  loadDaily: any = true;
+  imgSrc: any;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  loadDailyImage(src) {
+    this.loadDaily = false;
+    this.imgSrc = src;
+  }
+
+  hideDailyDisplayEvent(event) {
+    this.loadDaily = event;
   }
 
 
