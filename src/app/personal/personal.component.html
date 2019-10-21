@@ -1,4 +1,4 @@
-<div class="container" style="margin-bottom: 150px">
+<div *ngIf="!isLoading" class="container" style="margin-bottom: 150px">
 
   <div class="column" >
     <img src="/assets/japan/japan1.PNG" class="image" style="width:100%">
@@ -12,3 +12,5 @@
   </div>
 
 </div>
+
+<div *ngIf="isLoading" class="loader">Loading...</div>

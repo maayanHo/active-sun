@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NetafimComponent } from './netafim/netafim.component';
 import { HysolateComponent } from './hysolate/hysolate.component';
 import { DailyDisplayComponent } from './daily-display/daily-display.component';
+import {ServicesComponent} from './services/services.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/work' },
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'netafim', component: NetafimComponent },
   { path: 'hysolate', component: HysolateComponent },
-  { path: 'dailyDisplay', component: DailyDisplayComponent }
+  { path: 'dailyDisplay', component: DailyDisplayComponent },
+  { path: 'services', component: ServicesComponent }
 ];
 
 @NgModule({

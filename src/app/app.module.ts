@@ -21,6 +21,7 @@ import { NetafimComponent } from './netafim/netafim.component';
 import { HysolateComponent } from './hysolate/hysolate.component';
 import { DailyDisplayComponent } from './daily-display/daily-display.component';
 import { FooterComponent } from './footer/footer.component';
+import {ServicesComponent} from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FooterComponent } from './footer/footer.component';
     NetafimComponent,
     HysolateComponent,
     DailyDisplayComponent,
-    FooterComponent
+    FooterComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
